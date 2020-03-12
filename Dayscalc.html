@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="output"></div>
+
+    <script>
+        //    A program that calculates how many days a person has lived on planet earth.
+        var output = document.getElementById("output");
+        //This gets the id of the div i created in the html body.
+
+        //This is the total number of days per year. 
+        var year = 356;
+
+        //Question i asked the user
+        var question = prompt("What year were you born");
+
+        /*Calculation*/
+        var calc = 2020 - question;
+        var finCalc = calc * year;
+        var answer = "You have walked  " + finCalc + " days on planet earth.";
+
+        //This is the output of the answer which displays on our screen. 
+        output.innerHTML = answer;
+
+    </script>
+
+</body>
+
+</html>
